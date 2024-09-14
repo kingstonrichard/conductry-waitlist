@@ -7,7 +7,7 @@ title: 'Conductry Waitlist'
 
 <form action="https://formspree.io/f/xvgpnqoj" method="POST" class="waitlist-form" aria-labelledby="form-title" aria-describedby="form-description" id="waitlist-form">
   <h2 id="form-title">Join the Conductry Waitlist</h2>
-  <p id="form-description">Be the first to know when we launch. Manage projects like a conductor, with precision and ease.</p>
+  <p id="form-description">Be the first to know when we launch the ultimate toolset for project managers. Conduct your projects with precision and ease.</p>
 
 <label for="name">Name</label>
 <input type="text" id="name" name="name" placeholder="Your name" aria-required="true" required>

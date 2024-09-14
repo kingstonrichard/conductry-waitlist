@@ -58,14 +58,23 @@
     color: #333;
   }
 
+  /* Form input styles */
   .waitlist-form input {
     width: 100%;
     max-width: 400px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* Default neutral border */
     border-radius: 5px;
     font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  /* Focus state with border animation */
+  .waitlist-form input:focus {
+    border-color: #aaaaaa; /* Primary brand color for focus state */
+    box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
   }
 
   /* CTA Button */
@@ -81,7 +90,7 @@
   }
 
   .cta-button:hover {
-    background-color: #e55340; /* Darken on hover for effect */
+    background-color: #e22766; /* Darken on hover for effect */
   }
 
   /* Success/Error messages */
