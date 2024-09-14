@@ -26,11 +26,6 @@
     margin-bottom: 20px;
   }
 
-  .logo {
-    border: solid 20px #df336c;
-    border-radius: 12px;
-  }
-
   /* Typography for headings and subtext */
   h1 {
     font-family: 'Poppins', sans-serif;
