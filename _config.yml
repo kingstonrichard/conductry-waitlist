@@ -1,3 +1,4 @@
-url: 'https://conductry.com'
-baseurl: '' # the subpath of your site, e.g. /blog
-title: 'Conductry Waitlist' # the name of your site, e.g. ACME Corp.
+url: 'https://waitlist.conductry.com'
+baseurl: ''
+title: 'Conductry Waitlist'
+lang: 'en-gb'
