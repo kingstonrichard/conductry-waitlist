@@ -1,26 +1,26 @@
 <!-- _includes/waiting-list.html -->
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="icon" type="image/x-icon" sizes="16x16" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="32x32" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="48x48" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="64x64" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="128x128" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="256x256" rel="noopener" target="_blank" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="/apple-touch-icon.png">
-</head>
-<body>
-  <div class="container">
-    {% include header.html %}
-    {{ content }}
-  </div>
-  <script src="/assets/js/form-handler.js"></script>
-</body>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="48x48" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="64x64" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="128x128" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="256x256" rel="noopener" target="_blank" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="/apple-touch-icon.png">
+  </head>
+  <body>
+    <div class="container">
+      {% include header.html %}
+      {{ content }}
+    </div>
+    <script src="/assets/js/form-handler.js"></script>
+  </body>
 </html>

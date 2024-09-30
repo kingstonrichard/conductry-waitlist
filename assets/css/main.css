@@ -26,6 +26,17 @@
     margin-bottom: 20px;
   }
 
+  .logo {
+    background-color: #df336c;
+    border-radius: 50%;
+    padding: 1rem;
+    overflow: visible;
+  }
+
+  .logo path {
+    fill: #f9f9f9;
+  }
+
   /* Typography for headings and subtext */
   h1 {
     font-family: 'Poppins', sans-serif;
@@ -72,23 +83,7 @@
     box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
   }
 
-  /* CTA Button */
-  .cta-button {
-    background-color: #df336c; /* Primary brand color */
-    color: #fff;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .cta-button:hover {
-    background-color: #e22766; /* Darken on hover for effect */
-  }
-
-  /* Success/Error messages */
+    /* Success/Error messages */
   #success-message, #error-message {
     color: #ff6347;
     font-size: 1.1em;
