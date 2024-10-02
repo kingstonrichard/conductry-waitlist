@@ -79,13 +79,20 @@ p {
 
 .waitlist-form label {
 	margin-bottom: var(--spacing--ty);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 400px;
 }
 
 /* Form input styles */
-.waitlist-form input {
+.waitlist-form select,
+.waitlist-form input[type='text'],
+.waitlist-form input[type='email'] {
 	width: 100%;
 	max-width: 400px;
 	padding: var(--spacing--sm);
+	margin: 0;
 	margin-bottom: var(--spacing);
 	border-radius: var(--border-radius);
 	outline: none;
@@ -93,6 +100,7 @@ p {
 }
 
 /* Focus state with border animation */
+.waitlist-form select:focus,
 .waitlist-form input:focus {
 	box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
 }
