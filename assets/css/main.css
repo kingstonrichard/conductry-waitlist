@@ -16,12 +16,12 @@ body {
 }
 
 .logo {
-	--height-this: 120px;
+	--height-this: 80px;
 
 	background-color: var(--color-primary);
 	border-radius: calc(var(--ios-radius) * var(--height-this));
 	height: var(--height-this);
-	padding: var(--spacing);
+	padding: var(--spacing--ty);
 	margin-bottom: var(--spacing-sm);
 	overflow: visible;
 }
@@ -87,7 +87,6 @@ p {
 	max-width: 400px;
 	padding: var(--spacing--sm);
 	margin-bottom: var(--spacing);
-	border: 2px solid var(--color-border); /* Default neutral border */
 	border-radius: var(--border-radius);
 	outline: none;
 	transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -95,7 +94,6 @@ p {
 
 /* Focus state with border animation */
 .waitlist-form input:focus {
-	border-color: #aaaaaa; /* Primary brand color for focus state */
 	box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
 }
 
@@ -119,7 +117,7 @@ p {
 	overflow: hidden;
 	z-index: 1;
 	background-color: var(--color-primary);
-	color: var(--color-primary--contrast);
+	color: var(--color-primary--fore);
 	padding: 15px 40px;
 	border: none;
 	border-radius: var(--border-radius);
@@ -134,7 +132,7 @@ p {
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.2);
+	background: var(--color-primary--pale);
 	z-index: -1;
 	transition: left 0.3s ease;
 }
@@ -145,7 +143,6 @@ p {
 
 /* Button "loading" animation */
 .cta-button.loading {
-	background-color: #666;
 	cursor: not-allowed;
 }
 
