@@ -1,0 +1,36 @@
+:root {
+	--ios-radius: calc(14 / 57);
+	--border-radius: 0.5rem;
+
+	/* https://coolors.co/palette/0d3b66-faf0ca-f4d35e-ee964b-f95738 */
+
+	--color-primary: #f95738;
+	--color-secondary: #0d3b66;
+	--color-accent: #f4d35e;
+	--color-page: #f9f9f9;
+	--color-heading: #222;
+	--color-text: #666;
+
+	--color-primary--pale: color-mix(in srgb, var(--color-primary) 70%, white);
+	--color-primary--deep: color-mix(in srgb, var(--color-primary) 70%, black);
+	--color-primary--fore: color-mix(in srgb, var(--color-primary) 0%, white);
+	--color-secondary--pale: color-mix(in srgb, var(--color-secondary) 70%, white);
+	--color-secondary--deep: color-mix(in srgb, var(--color-secondary) 70%, black);
+	--color-secondary--fore: color-mix(in srgb, var(--color-secondary) 0%, white);
+	--color-accent--pale: color-mix(in srgb, var(--color-accent) 70%, white);
+	--color-accent--deep: color-mix(in srgb, var(--color-accent) 70%, black);
+	--color-accent--fore: color-mix(in srgb, var(--color-accent) 0.3s, white);
+
+	--font-family: 'Poppins', sans-serif;
+	--font-size: 1rem;
+	--font-size--ty: calc(var(--font-size) * 0.5);
+	--font-size--sm: calc(var(--font-size) * 0.75);
+	--font-size--lg: calc(var(--font-size) * 2);
+	--font-size--xl: calc(var(--font-size) * 3);
+
+	--spacing: 2rem;
+	--spacing--ty: calc(var(--spacing) * 0.25);
+	--spacing--sm: calc(var(--spacing) * 0.5);
+	--spacing--lg: calc(var(--spacing) * 1.5);
+	--spacing--xl: calc(var(--spacing) * 2);
+}

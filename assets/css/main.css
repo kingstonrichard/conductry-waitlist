@@ -1,166 +1,176 @@
-/* assets/css/main.css */
+@import 'root.css';
+@import 'normalize.css';
 
-/* Basic resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body {
+	background-color: var(--color-page);
+	color: var(--color-text);
+	font-family: var(--font-family);
+	font-size: var(--font-size--md);
+}
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: #333; /* Use a neutral color for the text */
-    background-color: #f9f9f9; /* Light background to give it a clean look */
-  }
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: var(--spacing);
+	text-align: center;
+}
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
+.logo {
+	--height-this: 80px;
 
-  /* Logo styling */
-  .header .logo {
-    max-width: 120px;
-    margin-bottom: 20px;
-  }
+	background-color: var(--color-primary);
+	border-radius: calc(var(--ios-radius) * var(--height-this));
+	height: var(--height-this);
+	padding: var(--spacing--ty);
+	margin-bottom: var(--spacing-sm);
+	overflow: visible;
+}
 
-  .logo {
-    background-color: #df336c;
-    border-radius: 50%;
-    padding: 1rem;
-    overflow: visible;
-  }
+.logo path {
+	fill: var(--color-primary--fore);
+}
 
-  .logo path {
-    fill: #f9f9f9;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-heading);
+	margin-bottom: var(--spacing--sm);
+}
 
-  /* Typography for headings and subtext */
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #333; /* Darker color for contrast */
-  }
+h1 {
+	font-size: var(--font-size--xl);
+}
 
-  p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #666; /* Softer color for descriptive text */
-  }
+h2 {
+	font-size: var(--font-size--lg);
+}
 
-  /* Form styling */
-  .waitlist-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+h3 {
+	font-size: var(--font-size--md);
+}
 
-  .waitlist-form label {
-    font-size: 1em;
-    margin-bottom: 8px;
-    color: #333;
-  }
+h4 {
+	font-size: var(--font-size--sm);
+}
 
-  /* Form input styles */
-  .waitlist-form input {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ccc; /* Default neutral border */
-    border-radius: 5px;
-    font-size: 1em;
-    outline: none;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
+h5 {
+	font-size: var(--font-size--ty);
+}
 
-  /* Focus state with border animation */
-  .waitlist-form input:focus {
-    border-color: #aaaaaa; /* Primary brand color for focus state */
-    box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
-  }
+h6 {
+	font-size: var(--font-size--ty);
+}
 
-    /* Success/Error messages */
-  #success-message, #error-message {
-    color: #ff6347;
-    font-size: 1.1em;
-    margin-top: 20px;
-  }
+p {
+	font-size: calc(var(--font-size) * 1.2);
+	margin-bottom: var(--spacing--lg);
+	color: var(--color-text);
+}
 
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2em;
-    }
+/* Form styling */
+.waitlist-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-    .cta-button {
-      width: 100%;
-    }
-  }
+.waitlist-form label {
+	margin-bottom: var(--spacing--ty);
+}
 
-  /* Liquid button effect */
+/* Form input styles */
+.waitlist-form input {
+	width: 100%;
+	max-width: 400px;
+	padding: var(--spacing--sm);
+	margin-bottom: var(--spacing);
+	border-radius: var(--border-radius);
+	outline: none;
+	transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Focus state with border animation */
+.waitlist-form input:focus {
+	box-shadow: 0 0 8px rgba(122, 122, 122, 0.3); /* Slight shadow for extra focus */
+}
+
+/* Success/Error messages */
+#success-message,
+#error-message {
+	color: var(--color-primary);
+	margin-top: var(--spacing);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.cta-button {
+		width: 100%;
+	}
+}
+
+/* Liquid button effect */
 .cta-button {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: #df336c;
-    color: #fff;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-color: var(--color-primary);
+	color: var(--color-primary--fore);
+	padding: 15px 40px;
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
 
-  .cta-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-    transition: left 0.3s ease;
-  }
+.cta-button:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: var(--color-primary--pale);
+	z-index: -1;
+	transition: left 0.3s ease;
+}
 
-  .cta-button:hover:before {
-    left: 0;
-  }
+.cta-button:hover:before {
+	left: 0;
+}
 
-  /* Button "loading" animation */
-  .cta-button.loading {
-    background-color: #666;
-    cursor: not-allowed;
-  }
+/* Button "loading" animation */
+.cta-button.loading {
+	cursor: not-allowed;
+}
 
-  .cta-button.loading:before {
-    left: 0;
-    animation: loading-animation 1.5s infinite;
-  }
+.cta-button.loading:before {
+	left: 0;
+	animation: loading-animation 1.5s infinite;
+}
 
-  @keyframes loading-animation {
-    0% {
-      left: -100%;
-    }
-    50% {
-      left: 100%;
-    }
-    100% {
-      left: -100%;
-    }
-  }
+@keyframes loading-animation {
+	0% {
+		left: -100%;
+	}
+	50% {
+		left: 100%;
+	}
+	100% {
+		left: -100%;
+	}
+}
 
-  /* Success and error fade in */
-  #success-message, #error-message {
-    opacity: 100;
-    transition: opacity 0.5s ease-in-out;
-  }
+/* Success and error fade in */
+#success-message,
+#error-message {
+	opacity: 100;
+	transition: opacity 0.5s ease-in-out;
+}
 
-  #success-message.hide, #error-message.hide {
-    opacity: 0;
-  }
+#success-message.hide,
+#error-message.hide {
+	opacity: 0;
+}
