@@ -5,7 +5,7 @@ document.getElementById('waitlist-form').addEventListener('submit', async functi
 
   const form = event.target;
   const formData = new FormData(form);
-  const submitButton = document.querySelector('.cta-button');
+  const submitButton = document.querySelector('#waitlist-submit');
 
   // Add loading state
   submitButton.classList.add('loading');
@@ -19,13 +19,19 @@ document.getElementById('waitlist-form').addEventListener('submit', async functi
     });
 
     if (response.ok) {
-      document.getElementById('success-message').classList.remove('hide');
+      document.getElementById('waitlist-form').classList.add('remove');
+      document.getElementById('success-message').classList.remove('remove');
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
       form.reset();
     } else {
       throw new Error('Form submission error');
     }
   } catch (error) {
-    document.getElementById('error-message').classList.remove('hide');
+    document.getElementById('error-message').classList.remove('remove');
   } finally {
     // Remove loading state after 2 seconds
     setTimeout(() => {
