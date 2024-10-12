@@ -10,11 +10,11 @@ title: 'Conductry waitlist'
 
   <!-- Name Field -->
   <label for="name">Name</label>
-  <input type="text" id="name" name="name" placeholder="Your name" aria-required="true" required>
+  <input type="text" id="name" name="name" placeholder="Your name" aria-required="true" autocomplete="true" required>
 
   <!-- Email Field -->
   <label for="email">Email</label>
-  <input type="email" id="email" name="_replyto" placeholder="Your email address" aria-required="true" required>
+  <input type="email" id="email" name="_replyto" placeholder="Your email address" aria-required="true" autocomplete="true" required>
 
   <!-- Hidden anti-spam field -->
   <input type="text" name="_gotcha" style="display:none">
